@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict AI - Stock Prices Prediction and Forcasting</title>
+ 
+    <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./Assets/favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+   
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./Assets/Predict.ai logo White.png" id="logo1" width="220" >
+      </a>
+
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link " data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="stock_prices.html" class="navbar-link" data-nav-link>Stock Prices</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Prediction.html" class="navbar-link" data-nav-link>Stock Prediction</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Subscription.html" class="navbar-link" data-nav-link>Subscription</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about_us.html" class="navbar-link" data-nav-link>About us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <a href="Log_sign.html" class="btn btn-outline">Login | sign</a>
+      
+
+      <!---Light/Dark Mode LOGO-->
+      <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+
+      
+    </div>
+  </header>
+
+
+
+      <!-- 
+    - #LOGIN / SIGN IN
+    -->
+
+    <h2 class="h2">#</h2>
+
+    <h1 class="h1-pricing">Login/SignUp Now to View Your Account</h1>
+
+    <div class="account_page">   
+        <div class="container">
+            <div class="row">            
+                <div class="col-2">
+                    <div class="form_container">
+                        <div class="form_btn">
+                            <span onclick="Login();">Login</span>
+                            <span onclick="Register();">SignUp</span>
+                            <hr id="indicator">
+                        </div>
+
+                        <form id="Log_form">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+
+                        <form id="Reg_form">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top" >
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./Assets/Predict.ai logo White.png" id="logo2" width="200" height="50" alt="Cryptex logo" >
+            
+          </a>
+
+          <h2 class="footer-title">Contact us</h2>
+
+          <a href="tel:+2012345678910" class="footer-contact-link">+20 123 456 678910</a>
+
+          <a href="mailto:PredictAI@gmail.com" class="footer-contact-link">PredictAI@gmail.com</a>
+
+          <address class="footer-contact-link">
+            Mansoura University, College of Science, 
+            Department of mathematics 
+          </address>
+
+        </div>
+
+        
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Languages</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">C#</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Python</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Javascript</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">HTML</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">CSS</a>
+          </li>
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Support</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Report an Erorr</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Plan</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Subscription</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Submit a request</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">API Documentation</a>
+          </li>
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Team</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Mohammed Hisham</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Marco George</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Ahmed Abd El-Haimd</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Mohamed Moaty</a>
+          </li>
+
+
+        </ul>
+
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">supervisor</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Dr. Fatma Eskander</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Predict AI All Rights Reserved by <a href="https://scifac.mans.edu.eg/" class="copyright-link">Mansoura University-College of Science</a>
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.twitter.com" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+ <!-- 
+    - custom js link
+  -->
+  <script src="./Script.js" defer></script>
+
+  
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+
+</html>
